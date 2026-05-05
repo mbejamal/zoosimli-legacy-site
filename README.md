@@ -1,0 +1,2 @@
+# zoosimli legacy site
+public
