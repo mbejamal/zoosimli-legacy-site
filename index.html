@@ -27,7 +27,7 @@
 
     @keyframes bgChange {
       0% { background-image: url('assets/images/home.jpeg'); }
-      33% { background-image: url('assets/images/b.avif'); }
+      33% { background-image: url('assets/images/g.webp'); }
       66% { background-image: url('assets/images/a.webp'); }
       100% { background-image: url('assets/images/home.jpeg'); }
     }
@@ -89,6 +89,23 @@
       text-align: center;
       padding: 20px;
     }
+
+    .partner-card {
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.partner-card img {
+  height: 80px;
+  object-fit: contain;
+}
+
+.partner-card p {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
   </style>
 </head>
 <body>
@@ -186,7 +203,7 @@
 
       <div class="col-md-4">
         <div class="p-4 bg-light rounded shadow">
-          <img src="assets/images/zoosimli_logo-removebg-preview.png" class="rounded-circle mb-3" width="120" alt="Founder">
+          <img src="assets/images/ceo.jpg" class="rounded-circle mb-3" width="120" alt="Founder">
           <h5>Jamal-Deen Yakubu</h5>
           <p>Founder & Cultural Lead</p>
         </div>
@@ -339,19 +356,59 @@
 
       <div class="carousel-inner">
 
+        <!-- Slide 1 -->
         <div class="carousel-item active">
-          <div class="d-flex justify-content-center gap-5 flex-wrap">
-            <img src="assets/images/zoosimli_logo-removebg-preview.png" style="height:100px;" alt="Partner 1">
-            <img src="assets/images/b.avif" style="height:100px;" alt="Partner 2">
-            <img src="assets/images/a.webp" style="height:100px;" alt="Partner 3">
+          <div class="row justify-content-center g-4">
+
+            <div class="col-6 col-md-3">
+              <div class="partner-card">
+                <img src="assets/images/partner.jpeg" class="img-fluid" alt="Zoosimli Legacy">
+                <p class="mt-2">Dantalaga Foundation</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+              <div class="partner-card">
+                <img src="assets/images/a.webp" class="img-fluid" alt="Cultural Partner">
+                <p class="mt-2">Cultural Partner</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+              <div class="partner-card">
+                <img src="assets/images/b.avif" class="img-fluid" alt="Training Partner">
+                <p class="mt-2">Training Partner</p>
+              </div>
+            </div>
+
           </div>
         </div>
 
+        <!-- Slide 2 -->
         <div class="carousel-item">
-          <div class="d-flex justify-content-center gap-5 flex-wrap">
-            <img src="assets/images/20260327_111445.jpg" style="height:100px;" alt="Partner 4">
-            <img src="assets/images/zoosimli_logo-removebg-preview.png" style="height:100px;" alt="Partner 5">
-            <img src="assets/images/b.avif" style="height:100px;" alt="Partner 6">
+          <div class="row justify-content-center g-4">
+
+            <div class="col-6 col-md-3">
+              <div class="partner-card">
+                <img src="assets/images/home.jpeg" class="img-fluid" alt="Community Partner">
+                <p class="mt-2">Community Partner</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+              <div class="partner-card">
+                <img src="assets/images/a.webp" class="img-fluid" alt="ICT Partner">
+                <p class="mt-2">ICT Partner</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+              <div class="partner-card">
+                <img src="assets/images/b.avif" class="img-fluid" alt="Development Partner">
+                <p class="mt-2">Development Partner</p>
+              </div>
+            </div>
+
           </div>
         </div>
 
@@ -368,7 +425,6 @@
     </div>
   </div>
 </section>
-
 <!-- Gallery -->
 <section id="gallery" class="section">
   <div class="container text-center">
@@ -376,14 +432,28 @@
 
     <div class="gallery-slider mt-4">
       <div class="gallery-track">
-        <img src="assets/images/b.avif">
-         <img src="assets/images/b.avif">
-          <img src="assets/images/b.avif">
+        <img src="assets/images/galley.webp">
+         <img src="assets/images/g.webp">
+          <img src="assets/images/gal.webp">
            <img src="assets/images/b.avif">
             <img src="assets/images/b.avif">
              <img src="assets/images/b.avif">
       </div>
     </div>
+
+  </div>
+</section>
+
+
+<!-- Local Video -->
+<section class="section">
+  <div class="container text-center">
+    <h2>Our Work in Action</h2>
+
+    <video controls class="w-100 mt-4" style="max-height:500px;">
+      <source src="assets/videos/zoosimli.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
 
   </div>
 </section>
